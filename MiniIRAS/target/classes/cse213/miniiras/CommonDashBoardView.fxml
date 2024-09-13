@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="commonDashBoardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.controller.CommonDashBoardViewController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+            <Menu mnemonicParsing="false" text="Registrar">
+               <items>
+                  <Menu mnemonicParsing="false" text="Reports">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#loadCourseSpecificWithdrwalChartOnAction" text="Course Specific Withdrawal Chart" />
+                        <MenuItem mnemonicParsing="false" onAction="#loadUserSpecificGenderRatioChartOnAction" text="Gender-Ratio Student Chart" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#loadAddNewCourseViewMenuItemOnAction" text="Add a New Course" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadCourseInfoFromFileViewMenuItemOnAction" text="View ALL Course Details" />
+                  <MenuItem mnemonicParsing="false" text="Goal-4" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="CITSAdmin">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#loadAddNewUserViewMenuItemOnAction" text="Add New User" />
+                  <MenuItem mnemonicParsing="false" text="Goal-2" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="HeadOfDept">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Offer Courses" />
+                  <MenuItem mnemonicParsing="false" text="Goal-2" />
+                  <MenuItem mnemonicParsing="false" text="Goal-3" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Faculty">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Submit Grade" />
+                  <MenuItem mnemonicParsing="false" text="Give Assignment" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadPdfGenerationViewMenuItemOnAction" text="Generate PDF with Frequency Distribution of Grades" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Student">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Register Courses" />
+                  <MenuItem mnemonicParsing="false" text="Evaluate Faculty" />
+                  <MenuItem mnemonicParsing="false" text="Pay Bill" />
+                  <MenuItem mnemonicParsing="false" text="Goal-4" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <Label prefHeight="17.0" prefWidth="700.0" style="-fx-background-color: lavender; -fx-border-color: gray;" text="Status: None" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <Label text="Welcome to Mini IRAS" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+   </center>
+</BorderPane>

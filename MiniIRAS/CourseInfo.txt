@@ -1,0 +1,5 @@
+11,aa,Core,3
+22,bb,Core,3
+33,cc,Minor,3
+44,,Minor,3
+55,ee,Minor,3

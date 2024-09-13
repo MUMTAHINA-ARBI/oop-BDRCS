@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="539.0" prefWidth="600.0" style="-fx-border-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.controller.CourseSpecificWithdrawalChartViewController">
+   <children>
+      <BarChart fx:id="withdrawalBarChart" layoutX="50.0" layoutY="14.0" prefHeight="383.0" prefWidth="500.0" title="Course Specific Withdrawal Chart">
+        <xAxis>
+          <CategoryAxis label="Section No" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="No of Students Withdrwan" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label layoutX="70.0" layoutY="451.0" text="Select Course" />
+      <ComboBox fx:id="selectCourseComboBox" layoutX="68.0" layoutY="475.0" prefHeight="25.0" prefWidth="111.0" />
+      <Label layoutX="191.0" layoutY="451.0" text="Enter Year:" />
+      <TextField fx:id="yearTextField" layoutX="191.0" layoutY="475.0" prefHeight="25.0" prefWidth="98.0" />
+      <Label layoutX="302.0" layoutY="451.0" text="Select Semester" />
+      <ComboBox fx:id="selectSemesterComboBox" layoutX="300.0" layoutY="475.0" prefHeight="25.0" prefWidth="111.0" />
+      <Button layoutX="447.0" layoutY="416.0" mnemonicParsing="false" onAction="#renderBarChartButtonOnAction" prefHeight="86.0" prefWidth="98.0" text="Render Chart" />
+   </children>
+</AnchorPane>
